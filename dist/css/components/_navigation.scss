@@ -1,0 +1,98 @@
+@import 'variables';
+.bg-dark {
+    background-color: $secondary !important;
+}
+
+.navigation-primary {
+    padding: 0 !important;
+    .dropdown.color-switch {
+        background-color: lighten($secondary, 8%);
+        // background-color: darken($primary, 15%);
+        transition: all 0.4s;
+        .dropdown-menu {
+            width: 0px;
+            top: 0px;
+            right: -1px;
+            border-radius: 0;
+            background: rgba(255, 255, 255, 0.9);
+            display: none;
+            height: 0;
+            transition: all 1s ease-in-out;
+            &.show {
+                height: 100vh;
+                top: 63px;
+                width: 99vw;
+                display: block;
+                transition: all 1s ease-in-out;
+            }
+        }
+    }
+    .dropdown.color-switch.show {
+        transition: all 0.1s;
+        background-color: darken($primary, 15%);
+    }
+    .nav-item {
+        .room {
+            img {
+                width: 25px;
+                height: 25px;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                user-select: none;
+            }
+            .nav-link {
+                padding: 0 !important;
+            }
+        }
+        .nav-link {
+            line-height: 26px;
+            font-size: 12px;
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+            .login {
+                padding: 20px;
+            }
+            .fas {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.navigation-secondary {
+    background-color: $primary;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: .5rem 1rem;
+    top: 66px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+    .nav-item {
+        border-right: 1px solid darken( $primary, 20%);
+        .nav-link {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            color: #000 !important;
+            &:active,
+            &:focus,
+            &:hover {
+                color: $dark-grey !important;
+            }
+        }
+        .active {
+            color: rgb(59, 59, 59);
+            ;
+        }
+        &:last-child {
+            border-right: none;
+        }
+    }
+}

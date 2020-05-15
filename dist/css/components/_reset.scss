@@ -1,0 +1,55 @@
+@import 'variables';
+* {
+    box-sizing: border-box;
+    padding: 0em;
+    margin: 0em;
+}
+
+html {
+    // scroll-behavior: smooth;
+}
+
+body {
+    .wrapper {
+        margin-top: 70px;
+    }
+}
+
+h1 {
+    font-size: $h1_size;
+    font-weight: $h1_weight;
+}
+
+h2 {
+    font-size: $h2_size;
+    font-weight: $h2_weight;
+}
+
+p {
+    font-size: $p_size;
+    font-weight: $p_weight;
+}
+
+a {
+    color: $light-grey;
+    text-decoration: none;
+    background-color: transparent;
+    &:hover {
+        color: darken($light-grey, 25%);
+        text-decoration: underline;
+        @include transition;
+    }
+}
+
+button {
+    letter-spacing: 0.4px;
+    outline: none !important;
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    &:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}

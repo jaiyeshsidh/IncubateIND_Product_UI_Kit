@@ -1,0 +1,113 @@
+// Gutter space in between column is 30 point. 
+$swiper-width: 80%;
+.swiper-challenge {
+    height: 100%;
+    // Because of parent spacing
+    margin-left: -15px !important;
+    padding-left: 15px !important;
+    // Added 30px as Removed the column paddings
+    width: calc(100% + 30px) !important;
+    .swiper-slide {
+        text-align: left;
+        font-size: 18px;
+        background: #fff;
+        width: $swiper-width;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide:nth-child(3n) {
+        margin-right: 30px !important;
+    }
+}
+
+@import 'variables';
+.swiper-prize {
+    @extend .swiper-challenge;
+    // this decides the edge of the last element
+    padding-right: 30px !important;
+    .swiper-slide {
+        width: 80%;
+    }
+    .swiper-slide:nth-child(3n) {
+        margin-right: 30px !important;
+    }
+}
+
+.swiper-mentor {
+    @extend .swiper-challenge;
+    // this decides the edge of the last element
+    padding-right: 10px !important;
+    .swiper-slide {
+        width: 50% !important;
+        // }
+        // .swiper-slide:nth-child(3n) {
+        //     margin-right: 30px !important;
+    }
+}
+
+.swiper-hackathon {
+    @extend .swiper-challenge;
+    // this decides the edge of the last element
+    padding-right: 10px !important;
+    .swiper-slide:last-child {
+        margin-right: 0px;
+    }
+}
+
+.package {
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+    background-color: $light-grey !important;
+}
+
+.swiper-pagination {
+    width: 100%;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    outline: none;
+    margin: 4px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $primary !important;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}

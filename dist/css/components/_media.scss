@@ -1,0 +1,80 @@
+@media (max-width: 992px) {
+    .cover {
+        height: $stage2_cover !important;
+        @include transition;
+    }
+    .community {
+        padding-top: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .cover {
+        border-radius: 0px;
+        @include transition;
+    }
+    .business {
+        img {
+            position: relative;
+        }
+    }
+    .column_right .main-partner {
+        li {
+            width: 24.3% !important;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .info_1 {
+        img {
+            width: 100px;
+            margin: 20px;
+        }
+        .date {
+            display: none;
+        }
+        .date-mob {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 513px) {
+    .cover {
+        height: $stage3_cover !important;
+        @include transition;
+    }
+    .badge-group {
+        top: 5px;
+        .badge {
+            background-color: $light-grey;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 318px) {
+    .cover {
+        height: 0 !important;
+        padding: 0;
+        @include transition;
+        .register {
+            display: none !important;
+        }
+    }
+    .info_1 {
+        .date-mob {
+            display: block;
+            text-align: left !important;
+            float: none !important;
+        }
+    }
+}
+
+// Left Panel Vertical Height
+@media(max-height: 632px) {
+    .text-sub {
+        display: none;
+    }
+}
