@@ -54,6 +54,24 @@ button:active {
           box-shadow: none !important;
 }
 
+table thead th {
+  color: #fff;
+  background-color: #1a1a1a !important;
+  border-color: #1a1a1a !important;
+}
+
+table tbody tr td:nth-child(1) {
+  width: 20%;
+}
+
+table tbody tr td:nth-child(2) {
+  width: 30%;
+}
+
+table tbody tr td:nth-child(3) {
+  width: 50%;
+}
+
 .bg-dark {
   background-color: #1a1a1a !important;
 }

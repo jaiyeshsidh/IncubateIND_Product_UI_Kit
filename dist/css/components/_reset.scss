@@ -49,3 +49,26 @@ button {
         box-shadow: none !important;
     }
 }
+
+table {
+    thead {
+        th {
+            color: #fff;
+            background-color: $secondary !important;
+            border-color: $secondary !important;
+        }
+    }
+    tbody {
+        tr {
+            td:nth-child(1) {
+                width: 20%;
+            }
+            td:nth-child(2) {
+                width: 30%;
+            }
+            td:nth-child(3) {
+                width: 50%;
+            }
+        }
+    }
+}
